@@ -374,7 +374,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="tp2" id="5ORP0jsO9TfqNeC2F3ft">
-    <mxGraphModel dx="611" dy="2785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+    <mxGraphModel dx="1444" dy="3040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
         <mxCell id="88mSUyzS7xf-w32WYXxD-0" />
         <mxCell id="88mSUyzS7xf-w32WYXxD-1" parent="88mSUyzS7xf-w32WYXxD-0" />
@@ -1091,10 +1091,10 @@
         </mxCell>
         <mxCell id="z2XwZZW2lTBd9uz2JXin-85" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="88mSUyzS7xf-w32WYXxD-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1840" y="500" as="sourcePoint" />
+            <mxPoint x="1840" y="780" as="sourcePoint" />
             <mxPoint x="1840" y="-940" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1640" y="500" />
+              <mxPoint x="1640" y="780" />
               <mxPoint x="1640" y="-940" />
             </Array>
           </mxGeometry>
@@ -1107,7 +1107,7 @@
             <mxPoint x="1920" y="640" as="sourcePoint" />
             <mxPoint x="1840" y="680" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="2000" y="720" />
+              <mxPoint x="2060" y="720" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1115,7 +1115,7 @@
           <mxGeometry x="1760" y="520" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="z2XwZZW2lTBd9uz2JXin-89" value="TP: all-reduce" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="88mSUyzS7xf-w32WYXxD-1">
-          <mxGeometry x="1940" y="620" width="120" height="40" as="geometry" />
+          <mxGeometry x="2000" y="620" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="z2XwZZW2lTBd9uz2JXin-90" value="(s, b, h)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" vertex="1" parent="88mSUyzS7xf-w32WYXxD-1">
           <mxGeometry x="1860" y="570" width="60" height="30" as="geometry" />
@@ -1125,7 +1125,7 @@
             <mxPoint x="1780" y="530" as="sourcePoint" />
             <mxPoint x="1730" y="580" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="2000" y="560" />
+              <mxPoint x="2060" y="560" />
             </Array>
           </mxGeometry>
         </mxCell>
