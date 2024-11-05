@@ -970,7 +970,7 @@
           <mxGeometry x="1760" y="120" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="z2XwZZW2lTBd9uz2JXin-53" value="$$softmax(\frac{QK^{T}}{\sqrt{h}})V$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="88mSUyzS7xf-w32WYXxD-1">
-          <mxGeometry x="1840" y="220" width="160" height="30" as="geometry" />
+          <mxGeometry x="1840" y="220" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="z2XwZZW2lTBd9uz2JXin-54" value="(s, b, h/2)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" vertex="1" parent="88mSUyzS7xf-w32WYXxD-1">
           <mxGeometry x="1740" y="330" width="60" height="30" as="geometry" />
