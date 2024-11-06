@@ -1255,7 +1255,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="tp2+sp" id="oggBF6hFKaC1-aMips5y">
-    <mxGraphModel dx="690" dy="2703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+    <mxGraphModel dx="1880" dy="3102" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
         <mxCell id="bfzjigs_yw7yWqnv9_Bu-0" />
         <mxCell id="bfzjigs_yw7yWqnv9_Bu-1" parent="bfzjigs_yw7yWqnv9_Bu-0" />
@@ -2190,7 +2190,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="i69dDkZBgXyIq6AjJbqg-10" value="&lt;div style=&quot;background-color:#ffffff;color:#24292e&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.0pt;&quot;&gt;ColumnParallelLinear.forward()-&amp;gt;&lt;span style=&quot;color:#6f42c1;&quot;&gt;LinearWithGradAccumulationAndAsyncCommunication.forward()&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;" parent="bfzjigs_yw7yWqnv9_Bu-1" vertex="1">
-          <mxGeometry x="860" y="420" width="600" height="250" as="geometry" />
+          <mxGeometry x="860" y="35" width="600" height="250" as="geometry" />
         </mxCell>
         <mxCell id="i69dDkZBgXyIq6AjJbqg-11" value="&lt;div style=&quot;background-color:#ffffff;color:#24292e&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.0pt;&quot;&gt;&lt;span style=&quot;color:#d73a49;&quot;&gt;if &lt;/span&gt;&lt;span style=&quot;color:#e36209;&quot;&gt;sequence_parallel&lt;/span&gt;&lt;span style=&quot;color:#d73a49;&quot;&gt;:&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#d73a49;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#005cc5;&quot;&gt;world_size &lt;/span&gt;&lt;span style=&quot;color:#d73a49;&quot;&gt;= &lt;/span&gt;&lt;span style=&quot;color:#6f42c1;&quot;&gt;get_tensor_model_parallel_world_size&lt;/span&gt;()&lt;br&gt;    &lt;span style=&quot;color:#005cc5;&quot;&gt;dim_size &lt;/span&gt;&lt;span style=&quot;color:#d73a49;&quot;&gt;= &lt;/span&gt;&lt;span style=&quot;color:#005cc4;&quot;&gt;list&lt;/span&gt;(&lt;span style=&quot;color:#e36209;&quot;&gt;input&lt;/span&gt;.&lt;span style=&quot;color:#6f42c1;&quot;&gt;size&lt;/span&gt;())&lt;br&gt;    &lt;span style=&quot;color:#005cc5;&quot;&gt;dim_size&lt;/span&gt;[&lt;span style=&quot;color:#005cc5;&quot;&gt;0&lt;/span&gt;] &lt;span style=&quot;color:#d73a49;&quot;&gt;= &lt;/span&gt;&lt;span style=&quot;color:#005cc5;&quot;&gt;dim_size&lt;/span&gt;[&lt;span style=&quot;color:#005cc5;&quot;&gt;0&lt;/span&gt;] &lt;span style=&quot;color:#d73a49;&quot;&gt;* &lt;/span&gt;&lt;span style=&quot;color:#005cc5;&quot;&gt;world_size&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#005cc5;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#005cc5;&quot;&gt;    all_gather_buffer &lt;/span&gt;&lt;span style=&quot;color:#d73a49;&quot;&gt;= &lt;/span&gt;&lt;span style=&quot;color:#6f42c1;&quot;&gt;get_global_memory_buffer&lt;/span&gt;().&lt;span style=&quot;color:#6f42c1;&quot;&gt;get_tensor&lt;/span&gt;(&lt;span style=&quot;color:#005cc5;&quot;&gt;dim_size&lt;/span&gt;, &lt;span style=&quot;color:#e36209;&quot;&gt;input&lt;/span&gt;.dtype, &lt;span style=&quot;color:#032f62;&quot;&gt;&quot;mpu&quot;&lt;/span&gt;)&lt;br&gt;    torch.distributed.&lt;span style=&quot;color:#6f42c1;&quot;&gt;_all_gather_base&lt;/span&gt;(&lt;br&gt;        &lt;span style=&quot;color:#005cc5;&quot;&gt;all_gather_buffer&lt;/span&gt;, &lt;span style=&quot;color:#e36209;&quot;&gt;input&lt;/span&gt;, &lt;span style=&quot;color:#e36209;&quot;&gt;group&lt;/span&gt;&lt;span style=&quot;color:#d73a49;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color:#6f42c1;&quot;&gt;get_tensor_model_parallel_group&lt;/span&gt;()&lt;br&gt;    )&lt;br&gt;    &lt;span style=&quot;color:#005cc5;&quot;&gt;total_input &lt;/span&gt;&lt;span style=&quot;color:#d73a49;&quot;&gt;= &lt;/span&gt;&lt;span style=&quot;color:#005cc5;&quot;&gt;all_gather_buffer&lt;br&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="i69dDkZBgXyIq6AjJbqg-10" vertex="1">
           <mxGeometry x="20" y="40" width="560" height="190" as="geometry" />
@@ -2278,6 +2278,15 @@
         </mxCell>
         <mxCell id="1Jctn0ukpJQcbkf6pC9--15" value="layernorm" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="bfzjigs_yw7yWqnv9_Bu-1">
           <mxGeometry x="530" y="650" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RnCFwfu2OYZX_nBdNTn7-0" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="bfzjigs_yw7yWqnv9_Bu-1" source="1Jctn0ukpJQcbkf6pC9--6" target="i69dDkZBgXyIq6AjJbqg-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="-990" as="sourcePoint" />
+            <mxPoint x="750" y="10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RnCFwfu2OYZX_nBdNTn7-1" value="code" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="RnCFwfu2OYZX_nBdNTn7-0">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
