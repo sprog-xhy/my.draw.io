@@ -1255,7 +1255,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="tp2+sp" id="oggBF6hFKaC1-aMips5y">
-    <mxGraphModel dx="2269" dy="3538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+    <mxGraphModel dx="1059" dy="2898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
         <mxCell id="bfzjigs_yw7yWqnv9_Bu-0" />
         <mxCell id="bfzjigs_yw7yWqnv9_Bu-1" parent="bfzjigs_yw7yWqnv9_Bu-0" />
@@ -2215,7 +2215,7 @@
           <mxGeometry x="2280" y="520" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="RnCFwfu2OYZX_nBdNTn7-84" value="(s, b, h)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" parent="bfzjigs_yw7yWqnv9_Bu-1" vertex="1">
-          <mxGeometry x="2380" y="590" width="60" height="30" as="geometry" />
+          <mxGeometry x="2380" y="570" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="RnCFwfu2OYZX_nBdNTn7-86" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="bfzjigs_yw7yWqnv9_Bu-1" source="IJQF5zT3-7EdMP5TNCGk-27" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
